@@ -9,28 +9,60 @@
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="css/style.css">
     <title>Lux-Ventus</title>
 </head>
 
 <body>
 
-    <nav class="flex justify-between py-3 w-full md:w-[1440px] m-auto">
-        <img class="h-9" src="./img/logo.png" alt="">
+    <!-- Nav Desktop -->
+    <nav aria-label="desktop" class="container px-4 md:px-0 flex justify-between py-4 w-full md:w-[1440px] m-auto">
+        <a href="/"><img class="h-9" src="./img/logo.png" alt=""></a>
 
-        <div class="flex items-center gap-12">
+        <div class="hidden md:flex items-center gap-6 lg:gap-12 ">
             <a href="#" class="hover:text-main_green">Fashion</a>
             <a href="#" class="hover:text-main_green">Lifestyle</a>
             <a href="#" class="hover:text-main_green">Spiritual</a>
             <a href="#" class="hover:text-main_green">Mental Health</a>
             <a href="#" class="active_link class class">Contact Us</a>
+        </div>
 
+        <div class="flex items-center gap-3 lg:gap-12">
             <i
                 class="fa-solid fa-magnifying-glass p-2 bg-main_green rounded-full hover:bg-opacity-80 cursor-pointer"></i>
+            <i id="hamburger"
+                class="fa-solid fa-bars p-2 bg-main_green rounded-full hover:bg-opacity-80 cursor-pointer md:hidden w-[36px] h-[36px] flex items-center justify-center"></i>
         </div>
     </nav>
 
 
+    <!-- Nav Mobile -->
+    <nav aria-label="mobile" id="mobile-menu"
+        class="fixed top-0 right-0 translate-x-full transition ease-in-out delay-300 w-full h-screen bg-gradient-to-t from-light_green to-white">
+
+        <div class="flex justify-between items-center p-4 mb-12">
+            <a href="/"><img class="h-9" src="./img/logo.png" alt=""></a>
+            <i id="close-mobile-btn"
+                class="fa-solid fa-xmark bg-main_green rounded-full hover:bg-opacity-80 text-lg h-[32px] w-[32px] flex items-center justify-center cursor-pointer"></i>
+        </div>
+
+        <div class="flex flex-col items-center gap-6 lg:gap-12 text-2xl">
+            <a href="#" class="hover:text-main_green">Fashion</a>
+            <a href="#" class="hover:text-main_green">Lifestyle</a>
+            <a href="#" class="hover:text-main_green">Spiritual</a>
+            <a href="#" class="hover:text-main_green">Mental Health</a>
+            <a href="#" class="active_link class class">Contact Us</a>
+        </div>
+
+    </nav>
+
+
+    <script src="./js/script.js"></script>
 </body>
 
 </html>

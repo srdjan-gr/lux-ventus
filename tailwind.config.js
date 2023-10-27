@@ -5,7 +5,11 @@ module.exports = {
     extend: {
       colors: {
         "main_green": "#4CE0D7",
+        "light_green": "#defaf8",
         "main_black": "262626",
+      },
+      fontFamily: {
+        'poppins_font': ['Poppins', 'sans-serif'],
       }
     },
   },

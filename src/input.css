@@ -3,12 +3,25 @@
 @tailwind utilities;
 
 
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+    color: #262626;
+} */
+
+
 .active_link{
     background-color: #4CE0D7;
-    padding: 2px 25px;
+    padding: 3px 22px;
     border-radius: 100px;
 }
 
 .active_link:hover{
     background-color: rgba(76, 224, 214, 0.8);
+}
+
+.active_mobile-menu{
+    transform: translateX(0);
 }
