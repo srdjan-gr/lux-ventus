@@ -25,3 +25,24 @@ body{
 .active_mobile-menu{
     transform: translateX(0);
 }
+
+.btn_rounded{
+    background-color: #4CE0D7;
+    width: 34px;
+    height: 34px;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn_rounded:hover{
+    background-color: #92ECE7;
+}
+
+.shadow_around{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; */
+    /* box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px; */
+}

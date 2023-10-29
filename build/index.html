@@ -18,7 +18,7 @@
     <title>Lux-Ventus</title>
 </head>
 
-<body class="font-poppins_font">
+<body class="font-poppins_font text-main_black">
 
     <!-- Nav Desktop -->
     <nav aria-label="desktop" class="container px-4 md:px-0 flex justify-between py-6 w-full lx:max-w-7xl m-auto">
@@ -30,17 +30,18 @@
                 <a href="#" class="hover:text-theme_green-700">Lifestyle</a>
                 <a href="#" class="hover:text-theme_green-700">Spiritual</a>
                 <a href="#" class="hover:text-theme_green-700">Mental Health</a>
-                <a href="#" class="active_link class class">Contact Us</a>
+                <a href="#" class="active_link">Contact Us</a>
             </div>
 
             <div class="flex items-center gap-3 lg:gap-12">
                 <i
-                    class="fa-solid fa-magnifying-glass p-2 bg-theme_green-500 rounded-full hover:bg-theme_green-300 cursor-pointer"></i>
+                    class="fa-solid fa-magnifying-glass p-2 btn_rounded"></i>
                 <i id="hamburger"
-                    class="fa-solid fa-bars p-2 bg-theme_green-500 rounded-full hover:bg-theme_green-300 cursor-pointer lg:hidden w-[36px] h-[36px] flex items-center justify-center"></i>
+                    class="fa-solid fa-bars p-2 btn_rounded"></i>
             </div>
         </div>
     </nav>
+
 
 
     <!-- Nav Mobile -->
@@ -53,7 +54,7 @@
         <div class="flex justify-between items-center p-4 mb-12">
             <a href="/"><img class="h-9" src="./img/logo.png" alt=""></a>
             <i id="close-mobile-btn"
-                class="fa-solid fa-xmark bg-theme_green-500 rounded-full hover:bg-theme_green-300 text-lg h-[32px] w-[32px] flex items-center justify-center cursor-pointer"></i>
+                class="fa-solid fa-xmark btn_rounded text-md"></i>
         </div>
 
         <div class="flex flex-col items-center gap-6 lg:gap-12 text-2xl">
@@ -66,8 +67,9 @@
     </nav>
 
 
+
     <!--Hero Section -->
-    <section class="mb-10 mt-3 px-4 lg:px-0 ">
+    <section class="mb-16 mt-3 px-4 lg:px-0 ">
         <div class="flex justify-center m-auto md:max-w-7xl relative">
             <img class="md:w-full rounded-2xl hidden md:block" src="./img/home-hero.png" alt="hero image">
             <img class="w-full rounded-2xl md:hidden" src="./img/hero-mobile.png" alt="hero image mobile">
@@ -78,6 +80,69 @@
                 <p class="md:w-3/5 w-5/6 m-auto md:m-0 text-white">We like to gossip about everything, but we will never forget the daily fashion dose.
                 </p>
             </div>
+        </div>
+    </section>
+
+
+
+    <!-- Slider Section -->
+    <section class="mb-16 px-4 lg:px-0 m-auto md:max-w-7xl">
+
+        <!-- Slider Header -->
+        <div class="flex justify-between mb-5">
+            <h2 class="mb-4 text-2xl font-semibold">Topics</h2>
+
+            <div class="flex items-center justify-center gap-1">
+                <i class="fa-solid fa-chevron-left btn_rounded text-md"></i>
+                <i class="fa-solid fa-chevron-right btn_rounded text-md"></i>
+            </div>
+        </div>
+
+        <!-- Slider -->
+        <div class="container flex items-center justify-center gap-2 lg:gap-4">
+
+            <!-- Slider card 1-->
+            <div class="bg-white shadow_around rounded-xl flex flex-col items-center justify-center gap-6 p-6 hover:-translate-y-1 transition linear delay-300">
+                <img class="h-16" src="./img/picto/lingerie-underwear.png" alt="lingerie">
+                <h3 class="text-sm font-semibold">Lingerie</h3>
+                <a href="#" class="active_link text-sm">View More</a>
+            </div>
+
+            <!-- Slider card 2-->
+            <div class="bg-white shadow_around rounded-xl flex flex-col items-center justify-center gap-6 p-6 hover:-translate-y-1 transition linear delay-300">
+                <img class="h-16" src="./img/picto/dress.png" alt="Spring">
+                <h3 class="text-sm font-semibold">Spring</h3>
+                <a href="#" class="active_link text-sm">View More</a>
+            </div>
+
+            <!-- Slider card 3-->
+            <div class="bg-white shadow_around rounded-xl flex flex-col items-center justify-center gap-6 p-6 hover:-translate-y-1 transition linear delay-300">
+                <img class="h-16" src="./img/picto/chakra.png" alt="Yoga">
+                <h3 class="text-sm font-semibold">Yoga</h3>
+                <a href="#" class="active_link text-sm">View More</a>
+            </div>
+
+            <!-- Slider card 4-->
+            <div class="bg-white shadow_around rounded-xl flex flex-col items-center justify-center gap-6 p-6 hover:-translate-y-1 transition linear delay-300">
+                <img class="h-16" src="./img/picto/lipstick.png" alt="Glow">
+                <h3 class="text-sm font-semibold">Glow</h3>
+                <a href="#" class="active_link text-sm">View More</a>
+            </div>
+
+            <!-- Slider card 5-->
+            <div class="bg-white shadow_around rounded-xl flex flex-col items-center justify-center gap-6 p-6 hover:-translate-y-1 transition linear delay-300">
+                <img class="h-16" src="./img/picto/dress-wedding-dress.png" alt="Esembles">
+                <h3 class="text-sm font-semibold">Esembles</h3>
+                <a href="#" class="active_link text-sm">View More</a>
+            </div>
+
+            <!-- Slider card 6-->
+            <div class="bg-white shadow_around rounded-xl flex flex-col items-center justify-center gap-6 p-6 hover:-translate-y-1 transition linear delay-300">
+                <img class="h-16" src="./img/picto/mask-theater.png" alt="Skin Care">
+                <h3 class="text-sm font-semibold">Skin Care</h3>
+                <a href="#" class="active_link text-sm">View More</a>
+            </div>
+
         </div>
     </section>
 
