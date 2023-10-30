@@ -52,3 +52,7 @@ body{
     border-radius: 12px;
     background-color: #fff;
 }
+
+.active_search{
+    transform: translateY(0);
+}

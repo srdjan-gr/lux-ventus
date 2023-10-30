@@ -32,11 +32,29 @@
             </div>
 
             <div class="flex items-center gap-3 lg:gap-12">
-                <i class="ph ph-magnifying-glass p-2 btn_rounded"></i>
+                <i id="search-btn" class="ph ph-magnifying-glass p-2 btn_rounded"></i>
                 <i id="hamburger" class="ph ph-list p-2 btn_rounded lg:hidden"></i>
             </div>
         </div>
     </nav>
+
+    <!-- Search Input -->
+    <div id="search-input" class="fixed top-0 left-0 z-40 w-full h-screen transition ease-in-out delay-300 -translate-y-full">
+
+        <!-- Search overlay -->
+        <div class="absolute top-0 left-0 z-40 w-full h-screen bg-gradient-to-t from-theme_green-100 to-white opacity-90 p-4"></div>
+
+        <div class="relative z-50 flex flex-col items-center justify-center w-full h-screen">
+
+            <form class="flex items-center border-b-[1px] border-theme_green-500 ">
+                <i class="ph ph-magnifying-glass p-2 btn_rounded"></i>
+                <input type="text" class="p-4 h-14  outline-none bg-transparent">
+            </form> 
+            <p class="text-gray-400 text-xs text-start">Enter search keyword</p>
+
+            <i id="close-search-btn" class="ph ph-x btn_rounded text-md absolute top-6 lg:top-40 right-4 lg:right-1/4 "></i>
+        </div>
+    </div>
 
 
 
