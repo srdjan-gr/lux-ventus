@@ -7,6 +7,7 @@ module.exports = {
         "light_green": "#defaf8",
         "main_black": "#262626",
         "gradient_blue": "#8BA9F4",
+        "bg_main": "#f5f5f5",
 
         'theme_green': {
           DEFAULT: '#4CE0D7',
