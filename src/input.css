@@ -14,7 +14,7 @@ body{
 
 .active_link{
     background-color: #4CE0D7;
-    padding: 3px 22px;
+    /* padding: 3px 22px; */
     border-radius: 100px;
 }
 
