@@ -16,10 +16,10 @@
     <title>Lux-Ventus</title>
 </head>
 
-<body class="font-poppins_font text-main_black bg-bg_main">
+<body class="font-poppins_font text-main_black bg-bg_main px-4">
 
     <!-- Nav Desktop -->
-    <nav aria-label="desktop" class="container px-4 md:px-0 flex justify-between py-6 w-full lg:max-w-6xl m-auto">
+    <nav aria-label="desktop" class="container md:px-0 flex justify-between py-6 w-full lg:max-w-6xl m-auto">
         <a href="/"><img class="h-9" src="./img/logo.png" alt=""></a>
 
         <div class="flex gap-12">
@@ -28,7 +28,7 @@
                 <a href="#" class="hover:text-theme_green-700 text-xs font-semibold">Lifestyle</a>
                 <a href="#" class="hover:text-theme_green-700 text-xs font-semibold">Spiritual</a>
                 <a href="#" class="hover:text-theme_green-700 text-xs font-semibold">Mental Health</a>
-                <a href="#" class="active_link text-xs font-semibold py-2 px-7">Contact Us</a>
+                <a href="contactUs.html" target="_blank" class="active_link text-xs font-semibold py-2 px-7">Contact Us</a>
             </div>
 
             <div class="flex items-center gap-3 lg:gap-12">
@@ -75,14 +75,14 @@
             <a href="#" class="hover:text-theme_green-700">Lifestyle</a>
             <a href="#" class="hover:text-theme_green-700">Spiritual</a>
             <a href="#" class="hover:text-theme_green-700">Mental Health</a>
-            <a href="#" class="active_link py-2 px-8">Contact Us</a>
+            <a href="contactUs.html" target="_blank" class="active_link py-2 px-8">Contact Us</a>
         </div>
     </nav>
 
 
 
     <!--Hero Section -->
-    <section class="mb-16 mt-3 px-4 lg:px-0 m-auto md:max-w-6xl">
+    <section class="mb-16 mt-3 lg:px-0 m-auto md:max-w-6xl">
         <div class="flex justify-center  relative">
             <img class="md:w-full rounded-2xl hidden md:block" src="./img/home-hero.png" alt="hero image">
             <img class="w-full rounded-2xl md:hidden" src="./img/hero-mobile.png" alt="hero image mobile">
@@ -99,7 +99,7 @@
 
 
     <!-- Slider Section -->
-    <section class="mb-20 px-4 lg:px-0 m-auto md:max-w-6xl">
+    <section class="mb-10 md:mb-20 lg:px-0 m-auto md:max-w-6xl">
 
         <!-- Slider Header -->
         <div class="flex justify-between mb-5">
@@ -162,12 +162,14 @@
 
 
     <!-- Main section -->
-    <main class="flex px-4 pt-10 mb-20 lg:px-0 m-auto md:max-w-6xl gap-10 border-t-[1px] border-gray-300">
+    <hr class="border-gray-300 w-full">
+    <main class="flex flex-col-reverse md:flex-row pt-10 mb-20 lg:px-0 m-auto md:max-w-6xl gap-10 ">
 
         <!-- Middle section -->
-        <section class="w-3/4 flex flex-col  ">
+        <section class="w-full md:w-3/4 flex flex-col  ">
 
-            <article class="main_card flex flex-col rounded-2xl relative">
+            <!-- Trending vertical card -->
+            <article class="main_card hidden md:flex flex-col rounded-2xl relative">
                 <img class="w-full rounded-2xl "  src="./img/pexels-sabrina-kennelly-1857000 1.png" alt="">
 
                 <a href="#" class="absolute top-4 left-5 py-[6px] px-10 rounded-2xl  bg-main_black text-xs text-white uppercase">Fashion</a>
@@ -195,12 +197,13 @@
             </article>
 
 
-            <!-- Trending cards -->
+            <!-- Trending vertical cards -->
             <section>
-                <h2 class="mt-20 mb-8 text-xl font-semibold ">Trending</h2>
+                <h2 class="hidden md:block mt-20 mb-8 text-xl font-semibold ">Trending</h2>
 
-                <div class="flex gap-10">
+                <div class="flex flex-col md:flex-row gap-10">
 
+                    <!-- Trending vertical card 1 -->
                     <article class="main_card flex flex-col rounded-2xl relative">
                         <img class="w-full rounded-2xl "  src="./img/Trending-01.png" alt="">
         
@@ -228,6 +231,7 @@
                         </div>
                     </article>
 
+                    <!-- Trending vertical card 1 -->
                     <article class="main_card flex flex-col rounded-2xl relative">
                         <img class="w-full rounded-2xl "  src="./img/Trending-02.png" alt="">
         
@@ -258,11 +262,11 @@
 
 
 
-                <!-- Horizontal Tranding -->
-                <div class="flex flex-col mt-20 gap-10">
+                <!-- Tranding Horizontal cardss -->
+                <div class="flex flex-col mt-10 md:mt-20 gap-10">
 
-                    <!-- Horizontal Trending Card 3 -->
-                    <article class="main_card flex rounded-2xl relative">
+                    <!-- Horizontal Trending Card 1 -->
+                    <article class="main_card flex flex-col md:flex-row rounded-2xl relative">
                         <img class="w-full rounded-2xl "  src="./img/trending-03.png" alt="">
         
                         <a href="#" class="absolute top-4 left-5 py-[6px] px-10 rounded-2xl  bg-main_black text-xs text-white uppercase">Fashion</a>
@@ -289,8 +293,8 @@
                         </div>
                     </article>
 
-                    <!-- Horizontal Trending Card 3 -->
-                    <article class="main_card flex rounded-2xl relative">
+                    <!-- Horizontal Trending Card 2 -->
+                    <article class="main_card flex flex-col md:flex-row rounded-2xl relative">
                         <img class="w-full rounded-2xl "  src="./img/trending-04.png" alt="">
         
                         <a href="#" class="absolute top-4 left-5 py-[6px] px-10 rounded-2xl  bg-main_black text-xs text-white uppercase">Esembles</a>
@@ -319,7 +323,7 @@
                     </article>
 
                     <!-- Horizontal Trending Card 3 -->
-                    <article class="main_card flex rounded-2xl relative">
+                    <article class="main_card flex flex-col md:flex-row rounded-2xl relative">
                         <img class="w-full rounded-2xl "  src="./img/trending-05.png" alt="">
         
                         <a href="#" class="absolute top-4 left-5 py-[6px] px-10 rounded-2xl  bg-main_black text-xs text-white uppercase">Mental Helth</a>
@@ -353,22 +357,23 @@
 
 
         <!-- Right section -->
-        <section class="w-1/4 flex flex-col gap-10">
+        <section class="w-full md:w-1/4 flex flex-col gap-10">
 
             <!-- Host card -->
-            <article class="main_card flex flex-col justify-center items-center rounded-2xl p-6">
+            <article class="main_card flex md:flex-col justify-center items-center rounded-2xl p-6">
                 <img class="h-[90px] w-[90px] rounded-full border-[6px] border-theme_green-500" src="./img/pexels-semih-akdağ-14893267 1.png" alt="">
 
-                <div class="flex flex-col justify-center items-center w-full py-6 border-b-[1px] border-gray-300">
+                <div class="flex flex-col justify-center items-start md:items-center w-full ms-5 md:ms-0 py-0 md:py-6  border-0 md:border-b-[1px] border-gray-300">
                     <p class="uppercase text-gray-300 text-xs">Your Host</p>
                     <p>Mallory Reyn</p>
+                    <a href="#" class="md:hidden active_link my-2 text-xs font-semibold py-1 px-10">Let's chat</a>
                 </div>
 
-                <p class="text-xs text-gray-400 pt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, sint molestiae repudiandae laboriosam reiciendis placeat.</p>
+                <p class="hidden md:block text-xs text-gray-400 pt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, sint molestiae repudiandae laboriosam reiciendis placeat.</p>
                 
-                <a href="#" class="active_link my-8 text-xs font-semibold py-1 px-10">Let's chat</a>
+                <a href="#" class="hidden md:block active_link my-8 text-xs font-semibold py-1 px-10">Let's chat</a>
 
-                <div class="flex items-center justify-center gap-2 mb-4">
+                <div class="hidden md:flex items-center justify-center gap-2 mb-4">
                     <img class="h-6  lg:h-6 cursor-pointer" src="./img/icons/facebook.png" alt="facebook">
                     <img class="h-6  lg:h-6 cursor-pointer" src="./img/icons/instagram.png" alt="instagram">
                     <img class="h-6  lg:h-6 cursor-pointer" src="./img/icons/linkedin.png" alt="linkedin">
@@ -379,21 +384,21 @@
 
 
             <!-- Newsletter card -->
-            <article class="main_card flex flex-col justify-center items-center gap-6 rounded-2xl px-6 py-10">
+            <article class="main_card flex flex-col justify-center items-center gap-3 md:gap-6 rounded-2xl px-6 py-10">
                 <h3 class="text-2xl font-semibold">Newsletter</h3>
-                <hr class="bg-gray-300 w-full">
+                <hr class="hidden md:block bg-gray-300 w-full">
                 <p class="text-gray-600 text-center text-xs mb-3">Join the 36,000 Lux Ventus!</p>
 
                 <input placeholder="Email Address" class="w-full border-[1px] border-gray-300 rounded-full p-2 text-gray-400 text-xs outline-none px-4 " type="email" name="" id="">
                 
                 <a href="#" class="active_link text-xs font-semibold w-full text-center p-2 border-[1px] border-theme_green-500">Subscribe</a>
                 
-                <p class="text-xs text-gray-600 text-center">Rest assured! You’re gonna have a lot of fun when you press this</p>
+                <p class="hidden md:block text-xs text-gray-600 text-center">Rest assured! You’re gonna have a lot of fun when you press this</p>
             </article>
 
 
             <!-- Top rated card-->
-            <article class="main_card flex flex-col justify-center rounded-2xl px-4 py-8">
+            <article class="main_card hidden md:flex flex-col justify-center rounded-2xl px-4 py-8">
                 <h3 class="text-md font-semibold text-left">Top Rated</h3>
                 <hr class="bg-gray-300 w-full my-5">
 
@@ -473,7 +478,7 @@
 
 
           <!-- Categories card-->
-          <article class="main_card flex flex-col justify-center rounded-2xl px-4 py-8">
+          <article class="main_card hidden md:flex flex-col justify-center rounded-2xl px-4 py-8">
 
               <h3 class="text-md font-semibold text-left">Categories</h3>
               <hr class="bg-gray-300 w-full my-5">
@@ -510,6 +515,7 @@
     </main>
 
 
+    <!-- Pagination -->
 
     <!-- Footer -->
     <footer class="bg-white rounded-t-[30px] pt-8">
