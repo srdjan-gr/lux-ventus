@@ -3,15 +3,6 @@
 @tailwind utilities;
 
 
-/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
-
-
-body{
-    font-family: 'Poppins', sans-serif;
-    color: #262626;
-} */
-
-
 .active_link{
     background-color: #4CE0D7;
     /* padding: 3px 22px; */
@@ -19,32 +10,15 @@ body{
 }
 
 .active_link:hover{
-    background-color: rgba(76, 224, 214, 0.8);
+    background-color: #4ce0d6cc;
 }
 
 .active_mobile-menu{
     transform: translateX(0);
 }
 
-.btn_rounded{
-    background-color: #4CE0D7;
-    width: 34px;
-    height: 34px;
-    border-radius: 50px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.btn_rounded:hover{
-    background-color: #92ECE7;
-}
-
 .shadow_around{
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; */
-    /* box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px; */
 }
 
 .main_card{
@@ -58,6 +32,14 @@ body{
 }
 
 
-.test{
-    @apply text-left to-red-500 text-[18px];
+.input {
+    @apply w-full border-[1px] border-gray-300 rounded-full p-2 text-gray-400 text-xs outline-none px-4;
+}
+
+.input_textarea {
+    @apply w-full border-[1px] border-gray-300 rounded-xl p-2 text-gray-400 text-xs outline-none px-4 resize-none;
+}
+
+.btn_rounded {
+    @apply bg-theme_green-500 w-[34px] h-[34px] rounded-3xl cursor-pointer flex items-center justify-center hover:bg-theme_green-400;
 }
