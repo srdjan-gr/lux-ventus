@@ -33,11 +33,11 @@
 
 
 .input {
-    @apply w-full border-[1px] border-gray-300 rounded-full p-2 text-gray-400 text-xs outline-none px-4;
+    @apply w-full border-[1px] border-gray-300 rounded-full p-2 text-gray-400 text-sm outline-none px-4;
 }
 
 .input_textarea {
-    @apply w-full border-[1px] border-gray-300 rounded-xl p-2 text-gray-400 text-xs outline-none px-4 resize-none;
+    @apply w-full border-[1px] border-gray-300 rounded-xl p-2 text-gray-400 text-sm outline-none px-4 resize-none;
 }
 
 .btn_rounded {
